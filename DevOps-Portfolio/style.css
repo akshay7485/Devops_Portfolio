@@ -804,6 +804,8 @@ section{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    flex-direction: row-reverse; /* Added to swap positions */
+    flex-direction: column; /* Changes layout to vertical */
 }
 
 .contact-info,.skills{
@@ -818,6 +820,7 @@ section{
 .contact-info input,
 .contact-info form textarea{
     width: 100%;
+    margin-top: 20px;
 }
 
 .contact-info form input,
@@ -855,12 +858,14 @@ form .btn{
     padding: 15px 20px;
     cursor: pointer;
     border: none;
+ 
 }
 
 /* ==================== Skills section css code ============================ */
 
 .skillBox{
     padding: 0 1rem 1rem;
+   
 }
 
 .skillBox .main-text{
@@ -879,6 +884,7 @@ form .btn{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .outer-circle{
@@ -938,6 +944,12 @@ h2.counter span{
     font-size: 1rem;
     font-weight: 500;
 }
+.down-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Add space between the child elements */
+}
+
 
 /*======================= footer ============================ */
 footer{
